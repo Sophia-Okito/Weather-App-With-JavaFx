@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.week7.controllers.HomeController">
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <Button fx:id="manageCoursesButton" text="View Courses"/>
+            <Button fx:id="manageStudentsButton" text="View Students"/>
+            <Button fx:id="enrollCourseButton" text="Enroll Course"/>
+            <Button fx:id="assignGradeButton" text="Assign Grade"/>
+            <Button fx:id="quitButton" text="Quit"/>
+        </VBox>
+    </center>
+</BorderPane>

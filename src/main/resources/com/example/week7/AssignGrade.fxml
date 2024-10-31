@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.week7.controllers.AssignGradeController">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Select Student:"/>
+                <ComboBox fx:id="studentComboBox"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Select Course:"/>
+                <ComboBox fx:id="courseComboBox"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Grade:"/>
+                <TextField fx:id="gradeTextField" promptText="Enter Grade"/>
+            </HBox>
+            <Button text="Assign Grade" onAction="#handleAssignGrade"/>
+            <Button text="Back" onAction="#handleBackButton"/>
+        </VBox>
+    </center>
+</BorderPane>
