@@ -32,7 +32,7 @@ A simple weather application built with JavaFX that fetches and displays real-ti
 
 1. Clone the repository.
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/Sophia-Okito/Weather-App-With-JavaFx.git)
     ```
 
 2. Import the project into your preferred IDE (e.g., IntelliJ IDEA or Eclipse).
@@ -89,6 +89,17 @@ src/
 
 <!-- Add screenshots here -->
 Example screenshot showing the app’s main view.
+
+<img width="1201" alt="Screenshot 2024-11-01 at 03 35 40" src="https://github.com/user-attachments/assets/c7559f3c-c9ec-4a90-a709-76797e43d785">
+
+
+<img width="395" alt="Screenshot 2024-11-01 at 03 46 42" src="https://github.com/user-attachments/assets/542693c0-8a0a-4744-a9fd-9f14edfb523d">
+
+
+<img width="1194" alt="Screenshot 2024-11-01 at 03 50 36" src="https://github.com/user-attachments/assets/7c221814-fe6d-4d7f-8a92-0f29bd3cd064">
+
+
+
 
 ## Credits
 
