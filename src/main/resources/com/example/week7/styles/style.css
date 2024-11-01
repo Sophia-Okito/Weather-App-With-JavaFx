@@ -1,0 +1,54 @@
+/* Apply to root container to set the background image */
+#rootPane {
+ -fx-background-image: url("../images/pexels-pixabay-531767.jpg");
+ -fx-background-size: cover;
+ -fx-background-position: center;
+ -fx-background-repeat: no-repeat;
+}
+
+/* Styling for the text field */
+#cityTextField {
+ -fx-opacity: 1.0;
+ -fx-padding: 10px;
+ -fx-font-size: 14px;
+ -fx-border-color: #ddd;
+ -fx-border-width: 1px;
+ -fx-background-color: #ffffff;
+}
+
+#cityTextField:focused {
+ -fx-opacity: 0.8;
+ -fx-border-color: #aaa;
+}
+
+/* Ensure the TableView has a transparent background */
+.table-view {
+ -fx-background-color: transparent;
+ -fx-padding: 10px; /* Optional: Add some padding inside the table */
+ -fx-border-radius: 5px; /* Optional: Rounded corners */
+ -fx-background-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Style for the table rows and cells to have a transparent background */
+.table-view .table-row-cell {
+ -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+ -fx-background-color: transparent;
+ -fx-border-color: transparent; /* Optional: to remove borders around cells */
+}
+
+/* Optional: Change the hover effect */
+.table-view .table-row-cell:hover {
+ -fx-background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/* Add margin to the VBox for the top and bottom sections */
+#topVBox {
+ -fx-margin: 20 0 0 0; /* Top margin */
+}
+
+#bottomVBox {
+ -fx-margin: 0 0 20 0; /* Bottom margin */
+}

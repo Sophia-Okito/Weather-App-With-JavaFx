@@ -3,14 +3,42 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.week7.controllers.HomeController">
+    <top>
+        <VBox alignment="CENTER" spacing="10" style="-fx-margin: 20 0 0 0;">
+            <HBox spacing="10" alignment="CENTER" style="-fx-margin: 20 0 0 0;">
+                <Label text="Enter City:"/>
+                <TextField fx:id="cityTextField" promptText="City name"/>
+                <Button fx:id="searchButton" text="Search"/>
+            </HBox>
+        </VBox>
+    </top>
     <center>
-        <VBox spacing="20" alignment="CENTER">
-            <Button fx:id="manageCoursesButton" text="View Courses"/>
-            <Button fx:id="manageStudentsButton" text="View Students"/>
-            <Button fx:id="enrollCourseButton" text="Enroll Course"/>
-            <Button fx:id="assignGradeButton" text="Assign Grade"/>
-            <Button fx:id="quitButton" text="Quit"/>
+        <VBox alignment="CENTER" fillWidth="true" spacing="10">
+            <TableView fx:id="searchTable" prefHeight="300" maxWidth="920">
+                <columns>
+                    <TableColumn fx:id="city" text="City" prefWidth="100"/>
+                    <TableColumn fx:id="day" text="Day" prefWidth="100"/>
+                    <TableColumn fx:id="temperature" text="Temperature" prefWidth="120"/>
+                    <TableColumn fx:id="icon" text="Icon" prefWidth="100">
+                        <cellFactory>
+                            <PropertyValueFactory property="iconImage"/>
+                        </cellFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="description" text="Description" prefWidth="100"/>
+                    <TableColumn fx:id="windSpeed" text="Wind Speed" prefWidth="100"/>
+                    <TableColumn fx:id="cloudiness" text="Cloudiness" prefWidth="100"/>
+                    <TableColumn fx:id="pressure" text="Pressure" prefWidth="100"/>
+                    <TableColumn fx:id="humidity" text="Humidity" prefWidth="100"/>
+                </columns>
+            </TableView>
         </VBox>
     </center>
+    <bottom>
+        <VBox alignment="CENTER" spacing="10" style="-fx-margin: 0 0 20 0;">
+            <Button fx:id="quitButton" text="Quit"/>
+        </VBox>
+    </bottom>
 </BorderPane>

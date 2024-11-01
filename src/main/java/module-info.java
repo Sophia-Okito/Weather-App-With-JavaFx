@@ -6,6 +6,7 @@ module com.example.week7 {
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
+    requires org.json;
 
     opens com.example.week7 to javafx.fxml;
     exports com.example.week7;
