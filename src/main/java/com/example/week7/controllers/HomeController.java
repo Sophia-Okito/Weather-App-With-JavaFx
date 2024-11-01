@@ -27,7 +27,7 @@ import java.util.List;
 
 public class HomeController {
 
-    private static final String API_KEY = "c5d1d49d9f7b4be00e2aaf57beaff7d1";
+    private static final String API_KEY = "";
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     @FXML
